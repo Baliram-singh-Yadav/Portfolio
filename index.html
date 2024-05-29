@@ -1,21 +1,414 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>3D Boxes Background</title>
-  </head>
-  <body>
-    <button id="btn" class="magic">Royal 🎩</button>
-    <div id="boxes" class="boxes big"></div>
-    <script src="script.js"></script>
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><br>
+    <title> Baliram Singh Yadav</title>
+    <link rel="icon" type="image/x-icon" href="./Images/favicon.png">
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="stylesheet" media="screen and (max-width: 821px)" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    
+ <a href="https://subharti.org/"> <img src="subharti1.png" class="imgbig" height="30px%" width="250px%"</a>
+    <!-- Navbar Section -->
+    <nav id="navbar" class="flex s-around bg-color">
+        <div class="left-nav">
+            <h2 class="t-white"> <i>Thanks for Visiting </i> </h2>
+        </div>
+        <div class="right-nav">
+            <ul class="flex">
+                <li><a href="#home" class="t-white roboto">Home</a></li>
+                <li><a href="#about" class="t-white roboto">About Me</a></li>
+                <li><a href="#skills" class="t-white roboto">Skills</a></li>
+                <li><a href="#services" class="t-white roboto">services</a></li>
+                <li><a href="#projects" class="t-white roboto">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Bottom Navigator -->
+    <section id="bottom">
+        <div class="bottom-nav flex s-center items-center">
+            <ul class="flex s-around items-center">
+                <a href="#home">
+                    <li class="bottomo-hover flex s-center items-center"><i class="fa-solid fa-house"></i></li>
+                </a>
+                <a href="#about">
+                    <li class="bottomo-hover flex s-center items-center"><i class="fa-solid fa-user"></i></li>
+                </a>
+                <a href="#skills">
+                    <li class="bottomo-hover flex s-center items-center"><i class="fa-solid fa-code"></i></li>
+                </a>
+                <a href="#services">
+                    <li class="bottomo-hover flex s-center items-center">
+                        <i class="fa-solid fa-rocket"></i>
+                    </li>
+                </a>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Home Section -->
+    <section id="home" class="flex s-around sw-80 m-auto">
+        <div class="home-left flex items-center">
+            <div class="home-content">
+                <h6 class="poppinss">Hi, I'm</h6>
+                <h1 class="t-white">Baliram Singh Yadav</h1>
+                <h4 class="poppinss">Frontend Web Developer</h4>
+                
+                <a class="btn live poppins" id="hireme" href="https://Wa.me/9608699330" target="_blank">Let's Talk</a>
+            </div>
+        </div>
+        <div class="home-right flex s-center items-center">
+            <div class="circle flex s-center items-center" id="mainImage">
+                <!-- Here in src replace the given link with your image link -->
+                <img src="baliram.jpg" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1 class="t-center my-2 t-white f-2">About Me</h1>
+        <div class="about-container flex s-around ">
+            <div class=" about-left flex s-center items-center">
+                <!-- Here in src replade the given link with your secondary image link -->
+                <img src="./Images/secondary.jpg" alt="" style="width: 50%;">
+            </div>
+
+            <div class="about-right flex">
+                <div class="about-content">
+                    <h1 class="t-white m-b-1 poppins">Baliram Singh Yadav</h1>
+                    <p class="t-white poppins"> Hello crazy mind young engineer, I am Baliram Singh Yadav, I am a
+                        software engineer, I have completed my studies from
+                        Swami Vivekanand Subharti University, Meerut and got certified by computer applicants. I also
+                        give ideas for making
+                        projects. I am a web designer and a good programmer. . Have a strong desire to become proficient
+                        in analytical tools,
+                        statistics and computing methods in a professional environment looking for an opportunity to
+                        establish a career as a
+                        Data Analyst. I am eager to contribute meaningfully to the success of the team.</p>
+                    <a class="btn live poppins" id="hireme"
+                        href="https://www.linkedin.com/in/baliram-singh-yadav-software-engineer-002086302 ">Hire Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+
+    <section id="skills">
+        <h1 class="t-center my-2 t-white f-2">Skills</h1>
+        <div class="services-container flex s-around h-50"">
+        <div class=" skills-left flex s-center items-center">
+            <img src="ahir.jpg" alt="">
+        </div>
+
+        <div class="skills-right flex items-center">
+            <div class="skillss-container">
+                <div class="html bar p-relative"><span class="bar-content left t-white">HTML</span><span
+                        class="bar-content right-skills t-white">90%</span></div>
+                <div class="css bar p-relative"><span class="bar-content left t-white">CSS</span><span
+                        class="bar-content right-skills t-white">50%</span></div>
+                <div class="js bar p-relative"><span class="bar-content left t-white">JavaScript</span><span
+                        class="bar-content right-skills t-white">50%</span></div>
+                <div class="bootstrap bar p-relative"><span class="bar-content left t-white">python</span><span
+                        class="bar-content right-skills t-white">50%</span></div>
+                <div class="reactjs bar p-relative"><span class="bar-content left t-white">ReactJs</span><span
+                        class="bar-content right-skills t-white">30%</span></div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h1 class=" t-center my-2 t-white f-2">Services</h1>
+        <div class="services-container flex s-center">
+            <div class="test-item flex f-col items-center">
+                <img src="developer.jpg" class="myimg" height="" width="" alt="">
+                <h1 class="t-white poppins">Web Development</h1><br>
+                <p class="t-white poppins">
+                    <marquee behavior="scroll" direction="left"> Web Development is envolving everywhere. <br>Every
+                        startup and every bussines
+                        have their own websites. <br> As my passion <br>I will help you to build your clean and fast
+                        website for your
+                        <br>
+                        startup or your bussines.
+                </p>
+                </marquee>
+            </div>
+            <div class="test-item flex f-col items-center">
+                <img src="sociall.jpg" class="myimg" alt="">
+                <h1 class="t-white poppins">Social Media Management</h1>
+                <p class="t-white poppins">
+                    <marquee behavior="scroll" direction="left"> Social Media is the power of future.<br> So I'll help
+                        in developing brand
+                        awareness <br> thow managing your social media handles <br>and will to increase customer
+                        loyalty.
+                </p>
+                </marquee>
+            </div>
+            <div class="test-item flex f-col items-center">
+                <img src="growth.avif" class="myimg" alt="">
+                <h1 class="t-white poppins">Growth Strategies</h1><br>
+                <p class="t-white poppins">
+                    <marquee behavior="scroll" direction="left"> As a web developer also I will help your<br> brand to
+                        grow up . I will provide
+                        the growth<br> strategies for your brand And<br> also help in searching techniques for your
+                        brand.
+                </p>
+                </marquee>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h1 class=" t-center my-2 t-white f-2">Course for beginner students</h1>
+        <div class="projects-container flex s-center">
+            <div class="projects-item flex f-col s-center items-center size">
+                <div class="image-container p-one">
+                    <br>
+                    <br>
+                    <img src="html.png" class="myimg" alt="">
+                </div>
+                <h1 class="t-white poppins">Html Full Course</h1>
+                <p class="t-white poppins">Hypertext Markup Language (HTML) is the basic scripting language used by web browsers to render pages on the World Wide Web. Hypertext allows a user to click on a link and be redirected to a new page referenced by that link..</p>
+                <div class="buttons flex s-around">
+                    <a href="https://youtu.be/WOOuZO7j_to?si=PEiZLMVfr5QCpr6w" target="_blanks" class="btn mx-1 m-top">Youtube</a>
+                    <a href="https://www.w3schools.com/html/" target="_blanks"
+                        class="btn m-top live">Live
+                        Link</a>
+                        <a href="/allpdf/HTMLPDF.pdf" target="_blank" class="btn m-top live">PDF</a>
+                </div>
+
+                 <!-- Projects Section -->
+    
+            </div>
+            <div class="projects-item flex f-col s-center items-center size">
+                <div class="image-container p-one">
+                    <br>
+                    <br>
+                    <img src="css.jpg" class="myimg" alt="">
+                </div>
+                <h1 class="t-white poppins">Css Full Course</h1>
+                <p class="t-white poppins">CSS, or "Cascading Style Sheets", is used to style and layout webpages. This can be used to adjust the size, spacing, color, and font of the content or add decorative features, such as animations  the content into columns..</p>
+                <div class="buttons flex s-around">
+                    <a href="https://youtu.be/iMohyeCNrLc?si=GsaEmiDj9_3FKw8d" target="_blanks" class="btn mx-1 m-top">Youtube</a>
+                    <a href="https://www.geeksforgeeks.org/css-introduction/?ref=roadmap" target="_blanks"
+                        class="btn m-top live">Live
+                        Link</a>
+                        <a href="/allpdf/css2.pdf" target="_blank" class="btn m-top live">PDF</a>
+
+                </div>
+
+                 <!-- Projects Section -->
+    
+            </div>
+            <div class="projects-item flex f-col s-center items-center size">
+                <div class="image-container p-one">
+                    <br>
+                    <br>
+                    <img src="java1.jpg" class="myimg" alt="">
+                </div>
+                <h1 class="t-white poppins">JavaScript Full Course</h1>
+                <p class="t-white poppins">javascript computer programming language used to make websites and applications dynamic and interactive.It is unique because it can run directly in your browser and not just on the server..</p>
+                <div class="buttons flex s-around">
+                    <a href="https://youtu.be/ivp0eNc0u9E?si=pzqv2H695K0AfLvf" target="_blanks" class="btn mx-1 m-top">Youtube</a>
+                    <a href="https://www.geeksforgeeks.org/introduction-to-javascript-course-learn-how-to-build-a-task-tracker-using-javascript/" target="_blanks"
+                        class="btn m-top live">Live
+                        Link</a>
+                        <a href="/allpdf/javascript.pdf" target="_blank" class="btn m-top live">PDF</a>
+                </div>
+
+                 <!-- Projects Section -->
+    
+            </div>
+            <div class="projects-item flex f-col s-center items-center size">
+                <div class="image-container p-one">
+                    <br>
+                    <br>
+                    <img src="react.png" class="myimg" alt="">
+                </div>
+                <h1 class="t-white poppins">React Js Full Course</h1>
+                <p class="t-white poppins">React is a library and not a framework. It was developed by Facebook to address their specific challenges. Understanding a new library or framework can be exciting, but its important to first grasp its core concepts.</p>
+                    <div class="buttons flex s-around">
+                    <a href="https://youtu.be/RGKi6LSPDLU?si=s33Ph604P69_-s0Z" target="_blanks" class="btn mx-1 m-top">Youtube</a>   
+                    <a href="https://www.codewithharry.com/tutorial/react-home/" target="_blanks" class="btn m-top live">Live
+                        Link</a>
+                       <a href="/allpdf/ReactJS.pdf" target="_blank" class="btn m-top live">PDF</a>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <div class="projects-item flex f-col s-center items-center size">
+                <div class="image-container p-two">
+                    <br>
+                    <br>
+                    <img src="c.jpg" class="myimg" alt="">
+                </div>
+
+                <h1 class="t-white poppins"> C Full Course</h1>
+                <p class="t-white poppins">C is a general-purpose programming language created by Dennis Ritchie at the Bell Laboratories in 1972.
+
+                    It is a very popular language, despite being old.The main reason for its popularity  .</sp>
+                <div class="buttons flex s-around">
+                    <a href="https://youtu.be/VSEnzzjAm0c?si=tStCd_p6waJVsVhc" target="_blank" class="btn mx-1 m-top">Youtube</a>
+                    <a href="https://www.w3schools.com/c/" target="_blank" class="btn m-top live">Live Link</a>
+                    <a href="/allpdf/c programming.pdf" target="_blank" class="btn m-top live">PDF</a>
+                </div>
+            </div>
+        
+            <div class="projects-item flex f-col s-center items-center size">
+                <div class="image-container p-three">
+                    <br><br>
+                    <img src="c+++.jpg" width="" class="myimg" id="" alt="">
+                </div>
+
+                <h1 class="t-white poppins">C ++ Full Course</h1>
+                <p class="t-white poppins">C++ is a cross-platform language that can be used to create high-performance applications. C++ was developed by Bjarne Stroustrup, as an extension to the C .</p>
+                <div class="buttons flex s-around">
+                     <a href="https://youtube.com/playlist?list=PLqcuf9-ILPYBKi7jvCNHGkcTvH7zcumnU&si=yhH7mSOWr5Aotg-3" target="_blank" class="btn mx-1 m-top">Youtube</a>
+                    <a href="https://www.w3schools.com/cpp/" target="_blank" class="btn m-top live">Live
+                        Link</a>
+                        <a href="/allpdf/c++ notes.pdf" target="_blank" class="btn m-top live">PDF</a>
+                        
+                </div>
+            </div>
+            <div class="projects-item flex f-col s-center items-center size">
+                <div class="image-container p-three"><br>
+                    <br>
+                    <img src="pyhton.jpg" class="myimg" alt="">
+                </div>
+
+                <h1 class="t-white poppins">Python Full Course</h1>
+                <p class="t-white poppins">Python Programming language is an interactive, object-oriented, scripting language. This language has been designed in such a way that the code written in it can be easily ..s</p>
+                <div class="buttons flex s-around">
+                     <a href="https://youtu.be/XWjUbY1M3dc?si=qj9LotnzeDff1Fjl" target="_blank" class="btn mx-1 m-top">Youtube</a>
+                    <a href="https://www.tutorialspoint.com/python/index.htm" target="_blank" class="btn m-top live">Live
+                        Link</a>
+                        <a href="/allpdf/PYTHON.pdf" target="_blank" class="btn m-top live">PDF</a>
+                </div>
+            </div>
+            <div class="projects-item flex f-col s-center items-center size">
+                <div class="image-container p-three">
+                    <br>
+                    <br>
+                    <img src="dsa1.jpg" class="myimg" alt="">
+                </div>
+
+                <h1 class="t-white poppins"> DSA Full Course</h1>
+                <p class="t-white poppins"> a powerful and efficient language that provides a wide range of Data Structures and Algorithms for complex data processing tasks. C++ Data Structures and Algorithms (DSA) is a part of Computer.s</p>
+                <div class="buttons flex s-around">
+                     <a href="https://youtu.be/OkS9YkfW50s?si=U1JgTgxOiiQdTOcO" target="_blank" class="btn mx-1 m-top">Youtube</a>
+                    <a href="https://www.geeksforgeeks.org/data-structures-and-algorithms-online-courses-free-and-paid/" target="_blank" class="btn m-top live">Live
+                        Link</a>
+                    <a href="/allpdf/DSA.pdf" target="_blank" class="btn m-top live">PDF</a>
+                </div>
+            </div>
+            <div class="projects-item flex f-col s-center items-center size">
+                <div class="image-container p-three">
+                    <img src="login1.jpg" alt="" class="myimg" id="imgbig">
+                </div>
+
+                <h1 class="t-white poppins">Login Form</h1>
+                <p class="t-white poppins">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic obcaecati cum
+                    nemo
+                    recusandae voluptas ipsum.s</p>
+                <div class="buttons flex s-around">
+                    <a href="https://github.com/Baliram-singh-Yadav" target="_blank" class="btn mx-1 m-top">GitHub</a>
+                    <a href="https://t.me/Crazymind_Engineer" target="_blank" class="btn m-top live">Live
+                        Link</a>
+                       
+                </div>
+            </div>
+
+        </div>
+          
+          
+
+
+        
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="contact" class="m-b-1">
+        <h1 class=" t-center my-2 t-white f-2">Contact Me</h1>
+        <div class="contact-container flex s-around items-centers">
+            <div class="form" id="contactForm">
+                <form action="" id="contactFrom">
+                    <div class="name form-div">
+                        <input type="text" name="name" id="name" class="poppins" placeholder="Enter Your Name">
+                    </div>
+                    <div class="email form-div">
+                        <input type="email" name="email" id="email" class="poppins" placeholder="Enter Your Email">
+
+                    </div>
+                    <div class="phone form-div">
+                        <input type="phone" name="phone" id="phone" class="poppins" placeholder="Enter Your Phone"
+                            required>
+                    </div>
+                    <div class="textarea form-div">
+                        <textarea name="text" id="textarea" cols="30" rows="10" class="poppins"
+                            placeholder="Enter Messages"></textarea>
+                    </div>
+                    <center> <button type="submit" class="btn poppins" id="submit">Send</button> </center>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <ul class="flex s-center w-80 m-auto my-2 res">
+            <li><a href="#home" class="poppinss">Home</a></li>
+            <li><a href="#about" class="poppinss">About</a></li>
+            <li><a href="#skills" class="poppinss">Skills</a></li>
+            <li><a href="#projects" class="poppinss">Projects</a></li>
+            <li><a href="#portfolio" class="poppinss">Portfolio</a></li>
+        </ul>
+        <ul class="flex s-center w-80 font-awesome ">
+            <a href="https://www.linkedin.com/in/baliram-singh-yadav-software-engineer-002086302 " target="_blank">
+                <li><i class="fa-brands fa-linkedin-in"></i></li>
+            </a>
+            <a href="https://github.com/Baliram-singh-Yadav" target="_blank">
+                <li><i class="fa-brands fa-github"></i></li>
+            </a>
+            <a href="https://www.instagram.com/01__royal_yadav?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank">
+                <li><i class="fa-brands fa-instagram"></i></li>
+            </a>
+            <a href="http://www.youtube.com/@_Royal_Yadav" target="_blank">
+                <li><i class="fa-brands fa-youtube"></i></li>
+            </a>
+        </ul>
+        <p class="t-center my-2 poppins">&copy; All Rights Reserved - <span class="cpy-white poppins">Royal Yadav
+            </span></p>
+
+    </footer>
+
+    <div id="scroll-top" onclick="scrolltop()">
+        <span><i class="fa-solid fa-arrow-up"></i></span>
+    </div>
+
+</body>
+<script src="/script.js"></script>
+
 </html>
